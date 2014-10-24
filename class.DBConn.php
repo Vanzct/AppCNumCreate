@@ -7,7 +7,7 @@ class DBConn{
 	
  	private $_conn=null;
 
- 	public function getConn($schema=DB_DSN_SHOW,$username=DB_USERNAME,$password=DB_PASSWORD){
+ 	public function getConn($schema=DB_DSN_CHANNEL,$username=DB_USERNAME,$password=DB_PASSWORD){
  		try{
  			$this->_conn=new PDO($schema,$username,$password);
  			$this->_conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
